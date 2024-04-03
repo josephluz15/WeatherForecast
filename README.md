@@ -1,5 +1,4 @@
-# CodeChallenge
-# Weather Fore Cast
+# CodeChallenge Weather Forecast
 Welcome to the weather forecast web application. please login with your GitHub user to use the application and view the weather in your city.
 #Configuration
 1. npm install
