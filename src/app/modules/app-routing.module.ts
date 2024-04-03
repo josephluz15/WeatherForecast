@@ -7,10 +7,7 @@ import { ROUTE } from '../common/constants/page-route';
 const routes: Routes = [
     {path: '', redirectTo : ROUTE.Login, pathMatch: 'full'},
     {path: ROUTE.Login, component:LoginComponent},
-//   { path: PAGE_ROUTE.Login, component: LoginComponent },
-//   { path: PAGE_ROUTE.Unauthorized, component: UnauthorizedComponent },
-//   { path: PAGE_ROUTE.NotFound, component: PageNotFoundComponent },
-//   { path: '**', component: PageNotFoundComponent }
+//  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { AppStoreService } from '../../../services/app-store-service';
 import { Router } from '@angular/router';
 import { ROUTE } from '../../../common/constants/page-route';
+import { EventEmitterService } from '../../../services/event-emitter-service';
 
 @Component({
   selector: 'app-weather',
@@ -15,8 +16,7 @@ export class WeatherComponent implements OnInit {
   wForcasts: Array<any> = new Array<any>;
   subs = new Subscription();
   cityName : string = "";
-  constructor(private weatherService: WeatherService, private _router:Router) { 
-
+  constructor(private weatherService: WeatherService, private _router:Router,private _eventService:EventEmitterService) { 
 
   }
 
@@ -33,7 +33,9 @@ export class WeatherComponent implements OnInit {
     return `${month < 10 ? '0':''}${month}/${date < 10 ? '0':''}${date}/${d.getFullYear()} ${d.toLocaleTimeString()}`
   }
   searchForcast(){
+    this._eventService.IsBusy = true;
     this.weatherService.getWeatherForcast(this.cityName).subscribe(forcast => {
+      this._eventService.IsBusy = false;
       if (forcast) {
         this.wForcasts = ((forcast.list || [])).map((f: any) => {
           return {

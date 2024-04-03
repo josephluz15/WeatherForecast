@@ -7,7 +7,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { ConfirmDialogComponent } from "../components/shared/dialog/confirm/confirm-dialog/confirm-dialog.component";
 import { BsAlertComponent } from "../components/shared/bs-alert/bs-alert.component";
 
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
    ConfirmDialogComponent,
@@ -15,13 +15,15 @@ import { BsAlertComponent } from "../components/shared/bs-alert/bs-alert.compone
   ],
   imports: [    
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     CommonModule,
-    NgxSpinnerModule,
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
     ReactiveFormsModule,
     NgbModule
   ],
   exports :[
+    BrowserAnimationsModule,
     NgxSpinnerModule,
     FormsModule,
     CommonModule,
