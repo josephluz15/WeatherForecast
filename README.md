@@ -1,6 +1,6 @@
 # CodeChallenge Weather Forecast
 Welcome to the weather forecast web application. please login with your GitHub user to use the application and view the weather in your city.
-#Technologies and API 
+# Technologies and API 
 1. Angular 17
 2. Bootstrap 5
 3. Font Awesome 5
