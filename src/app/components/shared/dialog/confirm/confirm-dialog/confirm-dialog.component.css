@@ -1,0 +1,23 @@
+
+.confirm-dialog-container{
+    padding: 18px;
+    margin: auto !important;
+    padding-left: 42px;
+   
+   .confirm-dialog-body{
+    padding-top: 12px;
+    padding-bottom: 12px;
+   }
+
+   .confirm-action-buttons{
+
+       .btn{
+           border-radius: 4px !important;
+           margin-right: 10px;
+           min-width: 100px;
+           font-weight: bold;
+           text-transform: uppercase;
+       }
+   }
+
+}

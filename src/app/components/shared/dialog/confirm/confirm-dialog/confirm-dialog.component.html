@@ -1,0 +1,17 @@
+
+<div class="confirm-dialog-container">
+  <div class="confirm-dialog-header">
+      <h6 class="title" *ngIf="!noTitle">
+        <i class="fa fa-question-circle" aria-hidden="true"></i> {{title}}
+      </h6>
+
+    </div>
+    <div class="confirm-dialog-body" [innerHTML]="message" >
+    </div>
+  
+    <div class="confirm-action-buttons d-flex">
+       <button type="button" class="btn btn-light" (click)="activeModal.dismiss('Cross click')">No</button>
+       <button type="button" class="btn btn-primary" (click)="confirm()">Yes</button>
+    </div>
+</div>
+

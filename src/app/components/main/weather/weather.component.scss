@@ -1,0 +1,12 @@
+
+@import './../../../../assets/scss/variables.scss';
+
+.result-container{
+    max-height: 600px;
+    overflow-y: auto;
+
+    table tr th{
+        background: $header-bg;
+        color: $white;
+    }
+}

@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./variables.scss";
+@import "./modal.scss";
+
+// @import "./mobile.scss";
+
+@import "./custom.scss";
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.page-container{
+  padding-top: 60px;
+}
+.page-content-wrapper {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+  .web,.web-td{
+    display: none;
+  }
+
+.bg-header{
+  background: $header-bg;
+}
+
+.app-search-container{
+  width: 100%;
+  margin-top: 45px !important;
+}
+.app-search{
+  margin: 0 auto;
+  max-width: 300px;
+    i{
+      float: left;
+      position: absolute;
+      margin-left: 9px;
+      margin-top: 11px;
+  
+    }
+    input[type=search]{
+      border-radius: 28px !important;
+      text-indent: 16px;
+      background: transparent;
+    }
+ 
+}
+
+  @import "./desktop.scss";

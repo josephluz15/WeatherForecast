@@ -1,0 +1,39 @@
+
+<div class="container forcast-div col-sx-12 col-sm-12 col-md-12 col-lg-12 p-0">
+  <div class="row col-sx-12 col-sm-12 col-md-12 col-lg-12 p-0 mb-5 mt-5">
+   <h3>Weather in<b class="text-uppercase"> {{cityName}}</b> City</h3>
+    <div class="result-container">
+      <table class="table table-striped">
+        <thead class="sticky-top top-0 ">
+          <tr>
+            <th scope="col">Date (mm/dd/yyyy)</th>
+            <th scope="col">Temp(F)</th>
+            <th scope="col" class="web-td">Description</th>
+            <th scope="col" class="web-td">Main</th>
+            <th scope="col" class="web-td">Pressure</th>
+            <th scope="col" class="web-td">Humidity</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of wForcasts">
+                <td>{{f.date}} </td>
+                <td>{{f.tempF}}° </td>
+                <td class="web-td" >{{f.desc}} </td>
+                <td class="web-td">{{f.main}} </td>
+                <td class="web-td">{{f.pressure}}hPa </td>
+                <td class="web-td">{{f.humidity}}% </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-2 mb-2 text-end mt-5">
+      <button class="btn btn-primary" type="button" (click)="goBack()">
+        <i class="fa fa-chevron-left"></i> Back
+       
+      </button>
+    </div>
+  </div>
+
+</div>
+

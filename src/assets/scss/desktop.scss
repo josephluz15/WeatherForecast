@@ -1,0 +1,27 @@
+
+// for big screen
+@media (min-width: 768px) {
+
+    .forcast-div{
+        width: 90%;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .mob{
+        display: none;
+    }
+
+    .web
+    {
+        display: block;
+    }
+    .web-td{
+            display: table-cell;
+    }
+
+    .app-search{
+        max-width: 600px;
+        width: auto;
+    }
+}
+

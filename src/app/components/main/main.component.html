@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-expand-lg app-header" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <div class="header-logo-container">
+        <img src="/assets/images/logo_white.png" class=" d-inline-block align-top header-logo" alt="">
+      </div>
+      
+    </a>
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 header-nav">
+      <li>
+        <i class="fas fa-sign-out-alt fa-2x pointer text-white" title="Logout" (click)="doLogout()"></i>
+      </li>
+     
+    </ul>
+  </div> 
+</nav>
+    
+   
+<div class="d-flex" id="wrapper">
+  <div class="page-content-wrapper">
+      <div class="container-fluid page-container no-padding">
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+<app-footer></app-footer>

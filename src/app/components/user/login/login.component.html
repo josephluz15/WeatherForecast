@@ -1,0 +1,25 @@
+
+<div class=" no-padding" id="loginContainer">
+  <div class="login-div-overlay"></div>
+  <div class="login-form-body">
+    <form #form="ngForm">
+      <div class="login-body p-3">
+        <div class=" text-center" style="padding: 20px;">
+          <img src="../../../../assets/images/logo.png"> 
+          
+        </div>
+        <div class="p-2">
+            Welcome to the weather forecast web application. please login with your GitHub user to use the application and view the weather in your city. 
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-login" (click)="login()">Login</button>
+        </div>
+      
+        <app-bs-alert></app-bs-alert>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+  

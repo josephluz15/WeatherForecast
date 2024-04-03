@@ -1,0 +1,25 @@
+<div class="container forcast-div col-sx-12 col-sm-12 col-md-12 col-lg-12 p-0">
+  <div class="row col-sx-12 col-sm-12 col-md-12 col-lg-12 p-0 mb-5 mt-5">
+    <div class="text-center">
+      <h1>{{((userProfile || {}).name || (userProfile || {}).nickname)}}</h1>
+      <h5>https://github.com/{{(userProfile || {}).nickname}}</h5>
+
+
+    </div>
+    <div class="app-search-container">
+      <div class="app-search">
+        <i class="fa fa-search"></i>
+        <input id="txtSearch" type="search" name="txtSearch" placeholder="City..." class="form-control"
+          [(ngModel)]="searchKey" (keyup.enter)="onTriggerSearch()" />
+      </div>
+      <div class="text-center mt-5">
+        <button class="btn btn-primary" type="button" (click)="navToWeatherPage()">
+          Display Weather
+  
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
