@@ -47,11 +47,14 @@ export class WeatherComponent implements OnInit {
             pressure: f.main.pressure,
             humidity: f.main.humidity
           }
-        })
+        });
+        return;
       }
+      alert("No Record Found!")
 
     }, err => {
-
+        this._eventService.IsBusy = false;
+        alert("No Record Found!")
     })
   }
 
